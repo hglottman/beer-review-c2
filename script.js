@@ -21,8 +21,23 @@ var renderBeers = function () {
     };
 };
 
+var switchSort = 0;
+
+    var scoreBeers = function () {
+   if (switchSort === 0) {
+       beers.sort(function (a, b) { return a.score-b.score});
+       switchSort =1 ;
+       renderBeers();
+   } else if (switchSort === 1) {
+        beers.sort(function (a, b) { return b.score-a.score});
+        switchSort = 0;
+        renderBeers();
+   }
+};
 
 
 $('.post-beer').click(addBeer);
 $('.render-beer').click(renderBeers);
+$('.score-beer').click(scoreBeers);
+
 

@@ -32,18 +32,23 @@
 
           <div class="form-group">
             <input type="text" class="category-input form-control" placeholder="Category">
-          </div>
+          </div><br>
+
+          <h3>Please rate your bear!</h3>
 
           <select class="chosenBeers">
-            <option>1 - bad</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 - awsome!</option>
-          </select>
+            <!-- <option>please rate your bear!</option> -->
+            <option value="0"> 0 - don't even think about it!</option>
+            <option value="1"> 1 - bad</option>
+            <option value="2"> 2 - pretty lame</option>
+            <option value="3"> 3 - not bad</option>
+            <option value="4"> 4 - like</option>
+            <option value="5"> 5 - awsome!</option>
+          </select><br>
 
           <button class="btn btn-primary post-beer" type="button">Post</button>
-          <button class="btn btn-warning render-beer" type="button">render beers</button>
+          <button class="btn btn-warning render-beer" type="button">Render beers</button>
+          <button class="btn btn-success score-beer" type="button">By score</button>
         </form>
       </div>
     </div>
